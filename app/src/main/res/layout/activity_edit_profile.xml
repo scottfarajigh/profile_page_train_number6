@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_editProfile">
+
+    <EditText
+        android:id="@+id/editProfile_userName_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/editprofile_hint"
+        android:layout_margin="12dp"
+        />
+
+    <EditText
+        android:id="@+id/editProfile_userbio_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/UserBio"
+        android:layout_margin="12dp"
+        />
+
+    <Button
+        android:id="@+id/editProfile_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/btn_primary_background"
+        app:backgroundTint="@null"
+        android:text="@string/done"
+        />
+
+</LinearLayout>
