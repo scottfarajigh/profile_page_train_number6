@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">برنامه نخست</string>
+        <string name="main_editProfie">ویرایش نمایه</string>
+        <string name="main_viewWebsite">مشاهده تارنما </string>
+        <string name="main_skills">تجارب</string>
+        <string name="main_android">توسعه دهنده اندروید</string>
+        <string name="done">تایید</string>
+        <string name="main_uidesign">رابط/تجربه کاربری</string>
+        <string name="main_deeplearning">یادگیری عمیق</string>
+        <string name="main_provinceCity">استان,شهر </string>
+        <string name="gilanRAsht">گیلان,رشت </string>
+        <string name="tehrran">تهران,تهران </string>
+        <string name="alborzkaraj">البرز,کرج </string>
+        <string name="main_saveinformation">دخیره اطلاعات</string>
+        <string name="editprofile_hint">نام و نام خانوادگی خود را وارد کنید !</string>
+</resources>
