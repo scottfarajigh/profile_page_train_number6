@@ -15,19 +15,26 @@ public class activity_editProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile);
-        String userName = getIntent().getStringExtra("userName");
-        EditText userNameEt = findViewById(R.id.editProfile_userName_et);
-        userNameEt.setText(userName);
-        Button DoneBtn = findViewById(R.id.editProfile_done);
-        DoneBtn.setOnClickListener(new View.OnClickListener() {
+        String userName = getIntent().getStringExtra(MainActivity.EXTRA_STRING_USERNAME);
+        String userBio = getIntent().getStringExtra(MainActivity.EXTRA_STRING_USERBIO);
+
+        EditText editText2 = findViewById(R.id.editProfile_userbio_et);
+        editText2.setText(userBio);
+        EditText editText = findViewById(R.id.editProfile_userName_et);
+        editText.setText(userName);
+        Button doneBtn =findViewById(R.id.editProfile_done);
+        doneBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String userName = userNameEt.getText().toString();
+                String userName = editText.getText().toString();
+                String userBio = editText2.getText().toString();
+
                 Intent intent = new Intent();
-                intent.putExtra("userName",userName);
+                intent.putExtra(MainActivity.EXTRA_STRING_USERNAME,userName);
+                intent.putExtra(MainActivity.EXTRA_STRING_USERBIO,userBio);
                 setResult(Activity.RESULT_OK,intent);
                 finish();
             }
         });
+        }
     }
-}
